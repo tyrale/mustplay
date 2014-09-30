@@ -1,0 +1,40 @@
+(function ($) {
+
+    $(document).ready(function(){
+
+    // ----------------------------------------------
+      
+    $( ".post-meta a:contains('yellow')" ).addClass('hidden');
+    $( ".post-meta a:contains('grey')" ).addClass('hidden');
+    $( ".post-meta a:contains('purple')" ).addClass('hidden');
+    $( ".post-meta a:contains('blue')" ).addClass('hidden');
+    $( ".post-meta a:contains('green')" ).addClass('hidden');
+    $( ".post-meta a:contains('red')" ).addClass('hidden');
+    $( ".post-meta a:contains('nowplaying')" ).addClass('hidden');
+    $( ".post-meta a:contains('black')" ).addClass('hidden');
+
+
+    $(".post")
+
+
+
+
+
+    });
+
+    // ----------------------------------------------
+
+    $(".icon-rss").click(function(event) {
+    	/* Act on the event */
+    	mixpanel.track("RSS Subscriber");
+    });
+    $(".tag-unlocks").click(function(event) {
+    	/* Act on the event */
+    	mixpanel.track("Unlocks");
+    });
+
+     // ----------------------------------------------
+
+
+
+})(jQuery);
