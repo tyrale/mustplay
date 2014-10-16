@@ -360,6 +360,7 @@ article.post.tag-sponsor:before {
 }
 
 /* ----------------------------- Played */
+article {transition: 1s;}
 article.played {
 	max-height: 60px !important;
 	min-height: 0px !important;
@@ -386,6 +387,7 @@ article.played {
 }
 .playMarker {
 	float: right;
+	cursor: pointer;
 }
 
 
