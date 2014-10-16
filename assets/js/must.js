@@ -34,5 +34,12 @@
 
         hasLooped = true;
     }
+
+    $('.playMarker').click(function() {
+        $(this).parent().parent(".post").addClass('played');
+    });
+    $('.post-header').click(function() {
+        $(this).parent(".post").removeClass('played');
+    });
     
 })(jQuery);

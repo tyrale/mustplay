@@ -194,7 +194,7 @@ h1 {color: white;}
 	margin-left: 50% !important;
 }
 .tag-portrait .post-excerpt div p {width: 40%;}
-.tag-portrait .post-meta {width: 50%;}
+.tag-portrait .post-meta {width: 45%;}
 .tag-portrait .post-excerpt div p:last-child { 
 	margin-left: 50%;
 }
@@ -220,7 +220,7 @@ h1 {color: white;}
 	margin-left: 5% !important;
 }
 .tag-landscape .post-excerpt div p {width: 30%;}
-.tag-landscape .post-meta {width: 100%;}
+.tag-landscape .post-meta {width: 92%;}
 .tag-landscape .post-excerpt div p:last-child { margin-left: 5%;}
 
 /* ----------------------------- Custom Headline Colors*/
@@ -358,4 +358,38 @@ article.post.tag-sponsor:before {
 		margin-left: 5% !important;
 	}
 }
+
+/* ----------------------------- Played */
+article.played {
+	max-height: 60px !important;
+	min-height: 0px !important;
+}
+.content article.played .post-meta,
+.content article.played section {
+	display: none;
+}
+.content article.played.tag-landscape .post-header,
+.content article.played.tag-portrait .post-header {
+	margin: 1em 0 0 5%;
+	text-decoration: line-through;
+	font-size: 0.6em;
+}
+.content article.played.tag-landscape .post-header:after,
+.content article.played.tag-portrait .post-header:after {
+	content: "#played";
+	text-decoration: none;
+	Float: right;
+	position: relative;
+	top: -30px;
+	right: 40px;
+	font-size: 1.4em;
+}
+.playMarker {
+	float: right;
+}
+
+
+
+
+
 
