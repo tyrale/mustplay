@@ -386,6 +386,7 @@ article.played {
 	right: 40px;
 	font-size: 1.4em;
 }
+.content article.played.tag-landscape h2.post-title { width: 70%;}
 .playMarker {
 	float: right;
 	cursor: pointer;
