@@ -22,7 +22,6 @@
     });
     // ----------------------------------------------
     var hasLooped = false;
-
     if(!hasLooped){
         $( "div" ).each(function() {
             $( ".bgImg" ).each(function(){
@@ -31,12 +30,24 @@
             });
             $(".bgImg").removeClass('bgImg');   
         });
-
         hasLooped = true;
     }
 
+    var addCheck = false;
+    if(!addCheck){
+        $( "div" ).each(function() {
+            $( ".bgImg" ).each(function(){
+                var $this = $(this);
+                $this.clone().prependTo($this.parent())
+            });
+            $(".bgImg").removeClass('bgImg');   
+        });
+        addCheck = true;
+    }
+
+
     $('.playMarker').click(function() {
-        $(this).parent().parent(".post").addClass('played');
+        $(this).parent().parent().parent().parent(".post").addClass('played');
     });
     $('.post-header').click(function() {
         $(this).parent(".post").removeClass('played');

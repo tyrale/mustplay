@@ -195,9 +195,15 @@ h1 {color: white;}
 }
 .tag-portrait .post-excerpt div p {width: 40%;}
 .tag-portrait .post-meta {width: 45%;}
-.tag-portrait .post-excerpt div p:last-child { 
+.tag-portrait .post-excerpt div p:nth-of-type(5) { 
 	margin-left: 50%;
 }
+/*.tag-portrait .post-excerpt div p:nth-of-type(6) { 
+	margin-left: 50%;
+	position: relative;
+	right: -175px;
+	top: -10px;
+}*/
 
 /* ----------------------------- iOS Landscape layout */
 .tag-landscape h2.post-title { width: 36%; }
@@ -329,7 +335,7 @@ article.post.tag-sponsor:before {
 	.post-header { margin-top: 5% !important;}
 	.tag-portrait .post-excerpt div p {width: 90%;}
 	.tag-portrait .post-meta {width: 90%;}
-	.tag-portrait .post-excerpt div p:last-child { 
+	.tag-portrait .post-excerpt div p:nth-of-type(5) { 
 		margin-left: 10%;
 	}
 	.tag-portrait .post-excerpt div p:nth-of-type(4) {
@@ -387,9 +393,14 @@ article.played {
 	font-size: 1.4em;
 }
 .content article.played.tag-landscape h2.post-title { width: 70%;}
-.playMarker {
-	float: right;
+.content article.tag-portrait .playMarker a {
 	cursor: pointer;
+	border: 2px solid white;
+	border-radius: 2px;
+	padding: 3px 9px;
+	color: white !important;
+	text-decoration: none;
+	opacity: 0.4;
 }
 
 
