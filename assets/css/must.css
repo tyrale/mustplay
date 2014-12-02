@@ -381,8 +381,14 @@ input[type="submit"] {
   white-space: nowrap; }
 
 h1 {
-  font-family: "Liberator"; }
+  font-family: "liberator-webfont", cursive; }
 
+@font-face {
+  font-family: "liberator-webfont";
+  src: url("../font/liberator-webfont.eot");
+  src: url("../font/liberator-webfont.eot") format("embedded-opentype"), url("../font/liberator-webfont.woff") format("woff"), url("../font/liberator-webfont.ttf") format("truetype"), url("../font/liberator-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 body {
   font-family: "Crete Round", serif;
   background-color: black; }
@@ -627,7 +633,7 @@ header.navigation {
       .content .post .post-header:last-child {
         margin-right: 0; }
       .content .post .post-header h2 {
-        font-family: "Liberator";
+        font-family: "liberator-webfont", cursive;
         font-size: 3em;
         text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
       .content .post .post-header .playMarker {
@@ -662,7 +668,7 @@ header.navigation {
         margin-top: -20px;
         margin-bottom: 20px; }
         .content .post .post-excerpt div h2 span {
-          font-family: "Patua One", cursive; }
+          font-family: "liberator-webfont", cursive; }
       .content .post .post-excerpt div p:nth-child(4) {
         font-size: 1.3em;
         margin-bottom: 30px;
