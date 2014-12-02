@@ -35,23 +35,23 @@
 
     var addCheck = false;
     if(!addCheck){
-        $( "div" ).each(function() {
-            $( ".bgImg" ).each(function(){
+        $( ".post-header" ).each(function() {
+            $( ".add-check" ).each(function(){
                 var $this = $(this);
-                $this.clone().prependTo($this.parent())
+                $this.prepend("<span class='playMarker'><a>✔︎</a></span>")
             });
-            $(".bgImg").removeClass('bgImg');   
+            $(".add-check").removeClass('add-check');   
         });
         addCheck = true;
     }
 
-
-    $('.playMarker').click(function() {
-        $(this).parent().parent().parent().parent(".post").addClass('played');
-    });
     $('.post-header').click(function() {
-        $(this).parent(".post").removeClass('played');
+        $(this).parent().parent(".post").removeClass('played');
     });
+    $('.playMarker').click(function() {
+        $(this).parent().parent().parent(".post").addClass('played');
+    });
+    
 
 
     var menu = $('#navigation-menu');
