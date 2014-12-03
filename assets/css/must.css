@@ -482,9 +482,8 @@ h2 .hidden {
   content: ""; }
 
 header.navigation {
-  background-color: white;
-  border-bottom: 10px solid black;
   height: 60px;
+  margin-top: 2em;
   width: 100%;
   z-index: 999;
   position: fixed;
@@ -621,7 +620,9 @@ header.navigation {
     margin-bottom: 0;
     border-bottom: none; }
     .content .post:first-child {
-      margin-top: 60px; }
+      max-height: 34em;
+      height: 34em;
+      padding-top: 4em; }
     .content .post .post-header {
       float: left;
       display: block;
@@ -930,14 +931,5 @@ article.played {
 
 .content article.played.tag-landscape h2.post-title {
   width: 70%; }
-
-.content article.tag-portrait .playMarker a {
-  cursor: pointer;
-  border: 2px solid white;
-  border-radius: 2px;
-  padding: 3px 9px;
-  color: white !important;
-  text-decoration: none;
-  opacity: 0.4; }
 
 /*# sourceMappingURL=must.css.map */
