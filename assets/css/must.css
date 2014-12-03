@@ -380,13 +380,10 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
-h1 {
-  font-family: "liberator-webfont", cursive; }
-
 @font-face {
-  font-family: "liberator-webfont";
-  src: url("../font/liberator-webfont.eot");
-  src: url("../font/liberator-webfont.eot") format("embedded-opentype"), url("../font/liberator-webfont.woff") format("woff"), url("../font/liberator-webfont.ttf") format("truetype"), url("../font/liberator-webfont.svg") format("svg");
+  font-family: "dimensions_oneregular";
+  src: url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.eot");
+  src: url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.eot?") format("embedded-opentype"), url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.woff2") format("woff2"), url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.woff") format("woff"), url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.ttf") format("truetype"), url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 body {
@@ -394,15 +391,34 @@ body {
   background-color: black; }
 
 h1 {
-  color: black;
   position: relative;
   top: -28px;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 10px;
   font-size: 4.8em;
-  letter-spacing: -4px;
-  margin-left: 8.5298%; }
+  letter-spacing: -5px;
+  margin-left: 8.5298%;
+  font-family: "dimensions two", cursive;
+  color: #D8E0BC; }
+  h1:before {
+    font-family: "dimensions three", cursive;
+    color: white;
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  h1:after {
+    font-family: "dimensions one", cursive;
+    color: black;
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
   h1 span {
     color: #888;
     font-size: 1.2em;
@@ -414,11 +430,111 @@ h1 {
 
 h2 {
   font-family: "Crete Round", serif; }
+  h2 .post-title l {
+    line-height: 1em; }
+  h2 .hidden {
+    display: none; }
 
-h2 .post-title l {
-  line-height: 1em; }
-h2 .hidden {
-  display: none; }
+.post-header h2 {
+  font-family: "dimensions one", cursive;
+  color: black;
+  font-size: 3em;
+  letter-spacing: -5px; }
+  .post-header h2:before {
+    font-family: "dimensions two", cursive;
+    color: white;
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .post-header h2:after {
+    font-family: "dimensions three", cursive;
+    color: #999;
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+
+.tag-yellow .post-header h2:after,
+.tag-yellow .post-excerpt div h2 span:after {
+  font-family: "dimensions three", cursive;
+  color: #B3B01E;
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.tag-grey .post-header h2:after,
+.tag-grey .post-excerpt div h2 span:after {
+  font-family: "dimensions three", cursive;
+  color: #3D3D45;
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.tag-purple .post-header h2:after,
+.tag-purple .post-excerpt div h2 span:after {
+  font-family: "dimensions three", cursive;
+  color: #46456E;
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.tag-blue .post-header h2:after,
+.tag-blue .post-excerpt div h2 span:after {
+  font-family: "dimensions three", cursive;
+  color: #4D95A3;
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.tag-green .post-header h2:after,
+.tag-green .post-excerpt div h2 span:after {
+  font-family: "dimensions three", cursive;
+  color: #95DBC7;
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.tag-red .post-header h2:after,
+.tag-red .post-excerpt div h2 span:after {
+  font-family: "dimensions three", cursive;
+  color: #A62027;
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.tag-brown .post-header h2:after,
+.tag-brown .post-excerpt div h2 span:after {
+  font-family: "dimensions three", cursive;
+  color: #D8E0BC;
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
 
 @font-face {
   font-family: "mustplay";
@@ -620,9 +736,9 @@ header.navigation {
     margin-bottom: 0;
     border-bottom: none; }
     .content .post:first-child {
-      max-height: 34em;
-      height: 34em;
-      padding-top: 4em; }
+      max-height: 33em;
+      height: 33em;
+      padding-top: 3em; }
     .content .post .post-header {
       float: left;
       display: block;
@@ -633,10 +749,6 @@ header.navigation {
       position: relative; }
       .content .post .post-header:last-child {
         margin-right: 0; }
-      .content .post .post-header h2 {
-        font-family: "liberator-webfont", cursive;
-        font-size: 3em;
-        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
       .content .post .post-header .playMarker {
         position: absolute;
         top: 4px;
@@ -669,7 +781,7 @@ header.navigation {
         margin-top: -20px;
         margin-bottom: 20px; }
         .content .post .post-excerpt div h2 span {
-          font-family: "liberator-webfont", cursive; }
+          font-family: "dimensions three", cursive; }
       .content .post .post-excerpt div p:nth-child(4) {
         font-size: 1.3em;
         margin-bottom: 30px;
@@ -785,34 +897,6 @@ article.post.tag-sponsor:before {
   font-size: 1em;
   top: 0px;
   right: 5px; }
-
-.tag-yellow .post-header h2,
-.tag-yellow .post-excerpt div h2 span {
-  color: #f4bc10; }
-
-.tag-grey .post-header h2,
-.tag-grey .post-excerpt div h2 span {
-  color: #aaa; }
-
-.tag-purple .post-header h2,
-.tag-purple .post-excerpt div h2 span {
-  color: #7e2e68; }
-
-.tag-blue .post-header h2,
-.tag-blue .post-excerpt div h2 span {
-  color: #256ef6; }
-
-.tag-green .post-header h2,
-.tag-green .post-excerpt div h2 span {
-  color: #37811a; }
-
-.tag-red .post-header h2,
-.tag-red .post-excerpt div h2 span {
-  color: #d52848; }
-
-.tag-brown .post-header h2,
-.tag-brown .post-excerpt div h2 span {
-  color: brown; }
 
 /* ----------------------------- Media Query */
 @media all and (max-width: 800px) {

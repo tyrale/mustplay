@@ -21,6 +21,16 @@
         mixpanel.track("Unlocks");
     });
     // ----------------------------------------------
+    var fancyHeader = false;
+    if(!fancyHeader){
+        $("h1, h2").each(function(){
+            var $this = $(this);
+            var gameName = $this.html()
+            $this.attr('data-content', gameName);
+        });
+        fancyHeader = true;
+    }
+
     var hasLooped = false;
     if(!hasLooped){
         $( "div" ).each(function() {
