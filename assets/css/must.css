@@ -382,8 +382,20 @@ input[type="submit"] {
 
 @font-face {
   font-family: "dimensions_oneregular";
-  src: url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.eot");
-  src: url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.eot?") format("embedded-opentype"), url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.woff2") format("woff2"), url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.woff") format("woff"), url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.ttf") format("truetype"), url("http://localhost:2368/assets/css/librito.de_-_neometrixone-webfont.svg") format("svg");
+  src: url(../font/librito.de_-_neometrixone-webfont.eot);
+  src: url(../font/librito.de_-_neometrixone-webfont.eot?) format("embedded-opentype"), url("../font/librito.de_-_neometrixone-webfont.woff2") format("woff2"), url("../font/librito.de_-_neometrixone-webfont.woff") format("woff"), url("../font/librito.de_-_neometrixone-webfont.ttf") format("truetype"), url("../font/librito.de_-_neometrixone-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "dimensions_threeregular";
+  src: url(../font/librito.de_-_neometrixthree-medium-webfont.eot);
+  src: url(../font/librito.de_-_neometrixthree-medium-webfont.eot?) format("embedded-opentype"), url("../font/librito.de_-_neometrixthree-medium-webfont.woff2") format("woff2"), url("../font/librito.de_-_neometrixthree-medium-webfont.woff") format("woff"), url("../font/librito.de_-_neometrixthree-medium-webfont.ttf") format("truetype"), url("../font/librito.de_-_neometrixthree-medium-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "dimensions_tworegular";
+  src: url(../font/librito.de_-_neometrixtwo-medium-webfont.eot);
+  src: url(../font/librito.de_-_neometrixtwo-medium-webfont.eot?) format("embedded-opentype"), url("../font/librito.de_-_neometrixtwo-medium-webfont.woff2") format("woff2"), url("../font/librito.de_-_neometrixtwo-medium-webfont.woff") format("woff"), url("../font/librito.de_-_neometrixtwo-medium-webfont.ttf") format("truetype"), url("../font/librito.de_-_neometrixtwo-medium-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 body {
@@ -392,33 +404,35 @@ body {
 
 h1 {
   position: relative;
-  top: -28px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 10px;
   font-size: 4.8em;
   letter-spacing: -5px;
   margin-left: 8.5298%;
-  font-family: "dimensions two", cursive;
+  font-family: "dimensions_tworegular", san-serif;
   color: #D8E0BC; }
   h1:before {
-    font-family: "dimensions three", cursive;
+    font-family: "dimensions_threeregular", cursive;
     color: white;
     content: attr(data-content);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; }
+    left: 0;
+    padding-top: 5px; }
   h1:after {
-    font-family: "dimensions one", cursive;
+    font-family: "dimensions_oneregular", cursive;
     color: black;
     content: attr(data-content);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; }
+    left: 0;
+    padding-top: 3px; }
   h1 span {
     color: #888;
     font-size: 1.2em;
@@ -436,12 +450,12 @@ h2 {
     display: none; }
 
 .post-header h2 {
-  font-family: "dimensions one", cursive;
+  font-family: "dimensions_oneregular", cursive;
   color: black;
   font-size: 3em;
   letter-spacing: -5px; }
   .post-header h2:before {
-    font-family: "dimensions two", cursive;
+    font-family: "dimensions_tworegular", san-serif;
     color: white;
     content: attr(data-content);
     position: absolute;
@@ -450,7 +464,7 @@ h2 {
     bottom: 0;
     left: 0; }
   .post-header h2:after {
-    font-family: "dimensions three", cursive;
+    font-family: "dimensions_threeregular", cursive;
     color: #999;
     content: attr(data-content);
     position: absolute;
@@ -461,7 +475,7 @@ h2 {
 
 .tag-yellow .post-header h2:after,
 .tag-yellow .post-excerpt div h2 span:after {
-  font-family: "dimensions three", cursive;
+  font-family: "dimensions_threeregular", cursive;
   color: #B3B01E;
   content: attr(data-content);
   position: absolute;
@@ -472,7 +486,7 @@ h2 {
 
 .tag-grey .post-header h2:after,
 .tag-grey .post-excerpt div h2 span:after {
-  font-family: "dimensions three", cursive;
+  font-family: "dimensions_threeregular", cursive;
   color: #3D3D45;
   content: attr(data-content);
   position: absolute;
@@ -483,7 +497,7 @@ h2 {
 
 .tag-purple .post-header h2:after,
 .tag-purple .post-excerpt div h2 span:after {
-  font-family: "dimensions three", cursive;
+  font-family: "dimensions_threeregular", cursive;
   color: #46456E;
   content: attr(data-content);
   position: absolute;
@@ -494,7 +508,7 @@ h2 {
 
 .tag-blue .post-header h2:after,
 .tag-blue .post-excerpt div h2 span:after {
-  font-family: "dimensions three", cursive;
+  font-family: "dimensions_threeregular", cursive;
   color: #4D95A3;
   content: attr(data-content);
   position: absolute;
@@ -505,7 +519,7 @@ h2 {
 
 .tag-green .post-header h2:after,
 .tag-green .post-excerpt div h2 span:after {
-  font-family: "dimensions three", cursive;
+  font-family: "dimensions_threeregular", cursive;
   color: #95DBC7;
   content: attr(data-content);
   position: absolute;
@@ -516,7 +530,7 @@ h2 {
 
 .tag-red .post-header h2:after,
 .tag-red .post-excerpt div h2 span:after {
-  font-family: "dimensions three", cursive;
+  font-family: "dimensions_threeregular", cursive;
   color: #A62027;
   content: attr(data-content);
   position: absolute;
@@ -527,7 +541,7 @@ h2 {
 
 .tag-brown .post-header h2:after,
 .tag-brown .post-excerpt div h2 span:after {
-  font-family: "dimensions three", cursive;
+  font-family: "dimensions_threeregular", cursive;
   color: #D8E0BC;
   content: attr(data-content);
   position: absolute;
@@ -612,7 +626,8 @@ header.navigation {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 9999; }
+    z-index: 9999;
+    top: -2em; }
     header.navigation .navigation-wrapper:after {
       content: "";
       display: table;
@@ -781,7 +796,7 @@ header.navigation {
         margin-top: -20px;
         margin-bottom: 20px; }
         .content .post .post-excerpt div h2 span {
-          font-family: "dimensions three", cursive; }
+          font-family: "dimensions_threeregular", cursive; }
       .content .post .post-excerpt div p:nth-child(4) {
         font-size: 1.3em;
         margin-bottom: 30px;
