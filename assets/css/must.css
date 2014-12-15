@@ -864,6 +864,19 @@ header.navigation {
   -moz-filter: blur(10px);
   filter: blur(10px); }
 
+.tag-landscape.played .post-excerpt div p:first-child img:nth-of-type(1) {
+  position: absolute;
+  top: -100%;
+  left: -120%;
+  z-index: -1;
+  min-width: 500%;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  filter: blur(10px); }
+
+.tag-portrait.played .post-excerpt div p:nth-of-type(2) img, .tag-portrait.tag-black.played .post-excerpt div p:nth-of-type(2) img {
+  display: none; }
+
 .tag-portrait .post-excerpt div p:nth-of-type(2) img, .tag-portrait.tag-black .post-excerpt div p:nth-of-type(2) img {
   position: absolute;
   left: 600px;
@@ -1000,9 +1013,6 @@ article.post.tag-sponsor:before {
   .tag-landscape .post-excerpt div h2 {
     margin-left: 5% !important; } }
 /* ----------------------------- Played */
-article {
-  transition: 1s; }
-
 article.played {
   max-height: 60px !important;
   min-height: 0px !important; }
